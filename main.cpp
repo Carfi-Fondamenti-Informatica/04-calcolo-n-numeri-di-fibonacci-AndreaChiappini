@@ -7,11 +7,11 @@ cin >> n;
         if (n>=2){
             cout << x << endl;
             cout << y << endl;
-            for (int i=0;i<n-1;i++){
-                int temp = x;
-                y = temp;
-                x += y;
-                cout << y << endl;
+            for (int i=2;i<n;i++){
+                z=x+y;
+                x=y;
+                y=z;
+                cout << z << endl;
             }
 
 
